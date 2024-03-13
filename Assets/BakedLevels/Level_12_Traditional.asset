@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425b0f4aec164915b19ce8c0e7a7aacb, type: 3}
+  m_Name: Level_12_Traditional
+  m_EditorClassIdentifier: 
+  data:
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 1
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 1
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 1
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 1
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 1
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 1
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 1
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 0
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  - flipTile:
+      config: {fileID: 11400000, guid: f1e80d111041b32459184a054687d093, type: 2}
+      startsActive: 1
+      activeForWin: 0
+      flipOffsets:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      glitched: 0
+  size: {x: 5, y: 5}
