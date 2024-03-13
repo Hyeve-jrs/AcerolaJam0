@@ -34,7 +34,12 @@ public class AudioManager : MonoBehaviour
 	private static AudioManager INSTANCE;
     void Start()
     {
-	    if(INSTANCE != null) Destroy(gameObject);
+	    if (INSTANCE != null)
+	    {
+		    Destroy(gameObject);
+		    return;
+	    }
+	    
 	    
         DontDestroyOnLoad(gameObject);
         source = GetComponent<AudioSource>();

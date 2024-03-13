@@ -20,12 +20,11 @@ public class FMVRenderToCanvas : MonoBehaviour
     void Start()
     {
 	    player = GetComponent<VideoPlayer>();
-        texture = RenderTexture.GetTemporary((int)player.width, (int)player.height);
+        texture = RenderTexture.GetTemporary(1280, 720);
         player.renderMode = VideoRenderMode.RenderTexture;
         player.targetTexture = texture; 
         image = GetComponent<RawImage>();
 	    image.texture = texture;
-	    image.color = Color.white;
     }
     
     void Update()
@@ -35,7 +34,6 @@ public class FMVRenderToCanvas : MonoBehaviour
 		    player.time = 0f;
 		    return;
 	    }
-	    
 	    
 	    if (player.time < InTime)
 	    {

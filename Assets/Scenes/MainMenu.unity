@@ -251,7 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneTo: PlayScene
   TransitionTime: 4
-  TransitionObject: {fileID: 761634251}
+  ToggleOnEvent: {fileID: 0}
 --- !u!114 &117690583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneTo: PlayScene
   TransitionTime: 4
-  TransitionObject: {fileID: 761634251}
+  ToggleOnEvent: {fileID: 0}
 --- !u!114 &345172903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,6 +516,7 @@ GameObject:
   - component: {fileID: 364521862}
   - component: {fileID: 364521861}
   - component: {fileID: 364521866}
+  - component: {fileID: 364521867}
   m_Layer: 0
   m_Name: FMV_BG_1
   m_TagString: Untagged
@@ -573,7 +574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -615,7 +616,7 @@ VideoPlayer:
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 0
-  m_SkipOnDrop: 0
+  m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
@@ -640,7 +641,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb9d154b504aad46a68f217237efc9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Delay: 0
+  Delay: 1
+--- !u!114 &364521867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364521859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1d018406fe9fd4b99794ec87c4099d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AssetFile: MAIN_BG_BLUR.mp4
+  playNow: 0
 --- !u!1001 &496671908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -828,9 +843,8 @@ GameObject:
   m_Component:
   - component: {fileID: 761634252}
   - component: {fileID: 761634257}
-  - component: {fileID: 761634256}
-  - component: {fileID: 761634255}
-  - component: {fileID: 761634254}
+  - component: {fileID: 761634259}
+  - component: {fileID: 761634258}
   m_Layer: 0
   m_Name: FMV_FG_TRANSITION
   m_TagString: Untagged
@@ -857,84 +871,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &761634254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761634251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bade8cc43740df54fbf0a62b3afc8ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AlphaIn: 0
-  AlphaHold: 1
-  AlphaOut: 1
-  InTime: 1
-  OutTime: 0
---- !u!114 &761634255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761634251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!328 &761634256
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761634251}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b5341d239e8a57e4599dcf7e8b423fce, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 2
-  m_AspectRatio: 1
-  m_DataSource: 0
-  m_TimeUpdateMode: 2
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
-  m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 0
-  m_Looping: 1
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
 --- !u!222 &761634257
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -943,6 +879,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761634251}
   m_CullTransparentMesh: 1
+--- !u!114 &761634258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761634251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8e5e9dd46a5574bb73e7bb1d6be369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaStart: 0
+  AlphaEnd: 1
+  FadeTime: 1
+  FadeDelay: 0
+--- !u!114 &761634259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761634251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1199302682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1245,7 @@ GameObject:
   - component: {fileID: 1624470178}
   - component: {fileID: 1624470177}
   - component: {fileID: 1624470176}
+  - component: {fileID: 1624470181}
   m_Layer: 0
   m_Name: FMV_BG_2
   m_TagString: Untagged
@@ -1375,7 +1358,7 @@ VideoPlayer:
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 0
-  m_SkipOnDrop: 0
+  m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
@@ -1388,6 +1371,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624470173}
   m_CullTransparentMesh: 1
+--- !u!114 &1624470181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624470173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1d018406fe9fd4b99794ec87c4099d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AssetFile: MAIN_BG_BLUR.mp4
+  playNow: 0
 --- !u!1 &1701008202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,8 +1475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AlphaStart: 1
   AlphaEnd: 0
-  FadeTime: 3
-  FadeDelay: 1
+  FadeTime: 1
+  FadeDelay: 3
 --- !u!1 &1833280462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,8 +2248,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneTo: PlayScene
-  TransitionTime: 4
-  TransitionObject: {fileID: 761634251}
+  TransitionTime: 1
+  ToggleOnEvent: {fileID: 761634251}
 --- !u!114 &8494433185881269907
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class FMVTransitioner : MonoBehaviour
 {
 	public string SceneTo;
 	public float TransitionTime;
-	public GameObject TransitionObject;
+	public GameObject ToggleOnEvent;
 	
 	public void StartTransition()
 	{
-		TransitionObject.SetActive(true);
+		ToggleOnEvent.SetActive(true);
 		StartCoroutine(LoadRoutine());
 	}
 
